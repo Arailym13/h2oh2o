@@ -2,6 +2,8 @@ package com.example.h2oh2o;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.h2oh2o.database.PostgresManager;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,5 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,RegistrationActivity.class));
             }
         });
+        PostgresManager.connectToPostgres();
     }
 }
