@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015c9d"
+    tools:context=".ProfileFragment"
+    tools:ignore="ExtraText">
+
+    <!-- TODO: Update blank fragment layout --><![CDATA[/>
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="435dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wave2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/avatar1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="317dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</FrameLayout>
