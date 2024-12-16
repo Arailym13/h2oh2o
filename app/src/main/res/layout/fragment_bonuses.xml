@@ -4,15 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".BonusesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="182dp"
-        android:src="@drawable/wave2" />
+    <!-- Главный контейнер -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- Текстовое поле, находящееся сверху -->
+        <TextView
+            android:id="@+id/bonusesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ваши бонусы:  40520,36 "
+            android:textColor="#015C9D"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
 
+        <!-- Дополнительное пространство ниже -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#015C9D" >
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/portner" />
+        </FrameLayout>
+    </LinearLayout>
 </FrameLayout>

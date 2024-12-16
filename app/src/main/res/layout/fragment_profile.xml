@@ -12,20 +12,19 @@
 
 
 
+
+
+
+
     ]]>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="435dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/wave2" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="106dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/avatar1" />
 
     <View
@@ -33,11 +32,82 @@
         android:layout_width="317dp"
         android:layout_height="250dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="190dp"
         android:layout_marginEnd="20dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FDFDFD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Потребление воды"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <!-- Поле ввода данных счетчика -->
+        <EditText
+
+            android:id="@+id/meterInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:hint="Введите показания счетчика (м³)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Поле ввода количества людей -->
+        <EditText
+            android:id="@+id/peopleInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="8dp"
+            android:hint="Введите количество людей"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Кнопка расчета -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#6200EE"
+            android:text="Рассчитать"
+            android:textColor="#FFFFFF" />
+
+        <!-- Поле вывода результата -->
+        <TextView
+            android:id="@+id/resultOutput"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:background="#F5F5F5"
+            android:minHeight="50dp"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

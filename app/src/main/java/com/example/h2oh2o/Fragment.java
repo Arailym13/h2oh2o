@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class fragment extends AppCompatActivity {
+public class Fragment extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
